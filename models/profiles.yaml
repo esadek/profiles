@@ -14,6 +14,8 @@ models:
       validity_time: 24h
       entity_key: user
       features:
+        - first_name
+        - last_name
         - user_lifespan
         - days_active
         - revenue
@@ -23,6 +25,22 @@ var_groups:
   - name: default_vars
     entity_key: user
     vars:
+      - entity_var:
+          name: first_name
+          select: FIRST_VALUE(first_name)
+          from: inputs/shopify_orders
+          where: first_name IS NOT NULL
+          window:
+            order_by:
+              - timestamp DESC
+      - entity_var:
+          name: last_name
+          select: FIRST_VALUE(last_name)
+          from: inputs/shopify_orders
+          where: last_name IS NOT NULL
+          window:
+            order_by:
+              - timestamp DESC
       - entity_var:
           name: first_seen
           select: MIN(CAST(timestamp AS date))
