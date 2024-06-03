@@ -33,9 +33,7 @@ var_groups:
       - entity_var:
           name: user_lifespan
           select: '{{user.Var("last_seen")}} - {{user.Var("first_seen")}}'
-          description: Life Time Value of a customer
       - entity_var:
           name: days_active
           select: COUNT(DISTINCT CAST(timestamp AS date))
           from: inputs/marketing_site_pages
-          description: No. of days a customer was active
