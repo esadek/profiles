@@ -6,6 +6,7 @@ models:
       entity_key: user
       edge_sources:
         - from: inputs/marketing_site_identifies
+        - from: inputs/shopify_orders
 
   - name: user_profile
     model_type: feature_table_model
