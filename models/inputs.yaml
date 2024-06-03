@@ -1,0 +1,23 @@
+inputs:
+  - name: marketing_site_identifies
+    app_defaults:
+      table: emil_demo.marketing_website.identifies
+      occurred_at_col: timestamp
+      ids:
+        - select: "anonymous_id"
+          type: anonymous_id
+          entity: user
+        - select: "user_id"
+          type: user_id
+          entity: user
+        - select: "email"
+          type: email
+          entity: user
+  - name: marketing_site_pages
+    app_defaults:
+      table: emil_demo.marketing_website.identifies
+      occurred_at_col: timestamp
+      ids:
+        - select: "anonymous_id"
+          type: anonymous_id
+          entity: user

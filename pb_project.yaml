@@ -1,0 +1,20 @@
+name: rudderstack_profiles
+schema_version: 54
+connection: snowflake
+include_untimed: true
+model_folders:
+  - models
+entities:
+  - name: user
+    id_stitcher: models/user_id_stitcher
+    id_types:
+      - user_id
+      - anonymous_id
+      - email
+id_types:
+  - name: user_id
+  - name: anonymous_id
+  - name: email
+    filters:
+      - type: include
+        regex: ".+@.+"
