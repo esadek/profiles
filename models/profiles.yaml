@@ -17,6 +17,7 @@ models:
         - user_lifespan
         - days_active
         - revenue
+        - order_count
 
 var_groups:
   - name: default_vars
@@ -42,4 +43,8 @@ var_groups:
       - entity_var:
           name: revenue
           select: SUM(order_amount)
+          from: inputs/shopify_orders
+      - entity_var:
+          name: order_count
+          select: COUNT(order_number)
           from: inputs/shopify_orders
