@@ -21,3 +21,17 @@ inputs:
         - select: "anonymous_id"
           type: anonymous_id
           entity: user
+  - name: shopify_orders
+    app_defaults:
+      table: emil_demo.shopify_store.order_completed
+      occurred_at_col: timestamp
+      ids:
+        - select: "anonymous_id"
+          type: anonymous_id
+          entity: user
+        - select: "email"
+          type: email
+          entity: user
+        - select: "shopify_customer_id"
+          type: shopify_customer_id
+          entity: user

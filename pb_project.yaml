@@ -11,6 +11,7 @@ entities:
       - user_id
       - anonymous_id
       - email
+      - shopify_customer_id
 id_types:
   - name: user_id
   - name: anonymous_id
@@ -18,3 +19,4 @@ id_types:
     filters:
       - type: include
         regex: ".+@.+"
+  - name: shopify_customer_id
