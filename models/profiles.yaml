@@ -7,7 +7,6 @@ models:
       edge_sources:
         - from: inputs/marketing_site_identifies
         - from: inputs/shopify_orders
-
   - name: user_profile
     model_type: feature_table_model
     model_spec:
@@ -20,7 +19,6 @@ models:
         - days_active
         - revenue
         - order_count
-
 var_groups:
   - name: default_vars
     entity_key: user

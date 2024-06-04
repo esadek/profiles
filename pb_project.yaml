@@ -1,7 +1,6 @@
 name: rudderstack_profiles
-schema_version: 54
+schema_version: 63
 connection: snowflake
-include_untimed: true
 model_folders:
   - models
 entities:
