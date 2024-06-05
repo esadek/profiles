@@ -1,5 +1,4 @@
 import os
-import pprint
 import yaml
 
 directory = os.path.dirname(__file__) + "/../../"
