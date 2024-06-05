@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run script
-        run: python ./.github/workflows/update_docs.py
+        run: python ./.github/workflows/update_readme.py
       - name: Commit changes
         run: |
           git config --local user.name  ${{ github.actor }}
