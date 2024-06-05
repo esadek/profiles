@@ -46,10 +46,10 @@
 <tbody>
 <tr><td>user</td><td>anonymous_id</td><td><code>anonymous_id</code></td></tr>
 <tr><td>user</td><td>user_id</td><td><code>user_id</code></td></tr>
-<tr><td>user</td><td>email</td><td><code>email</code></td></tr>
+<tr><td>user</td><td>email</td><td><code>LOWER(email)</code></td></tr>
 </tbody>
 </table></td></tr>
-<tr><td>marketing_site_pages</td><td>emil_demo.marketing_website.identifies</td><td><table>
+<tr><td>marketing_site_pages</td><td>emil_demo.marketing_website.pages</td><td><table>
 <thead>
 <tr><th>Entity</th><th>Type</th><th>Select</th></tr>
 </thead>
@@ -63,7 +63,7 @@
 </thead>
 <tbody>
 <tr><td>user</td><td>anonymous_id</td><td><code>anonymous_id</code></td></tr>
-<tr><td>user</td><td>email</td><td><code>email</code></td></tr>
+<tr><td>user</td><td>email</td><td><code>LOWER(email)</code></td></tr>
 <tr><td>user</td><td>shopify_customer_id</td><td><code>shopify_customer_id</code></td></tr>
 </tbody>
 </table></td></tr>
