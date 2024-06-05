@@ -142,7 +142,7 @@ def get_entity_vars() -> str:
         try:
             var_groups = yaml.safe_load(f).get("var_groups")
             document = ""
-            document += generate_header("Var Groups", 2)
+            document += generate_header("Entity Vars", 2)
             columns = ["Entity Var", "Select", "From", "Where" ]
             rows = []
             for var_group in var_groups:
