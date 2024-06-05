@@ -10,12 +10,12 @@ inputs:
         - select: "user_id"
           type: user_id
           entity: user
-        - select: "email"
+        - select: "LOWER(email)"
           type: email
           entity: user
   - name: marketing_site_pages
     app_defaults:
-      table: emil_demo.marketing_website.identifies
+      table: emil_demo.marketing_website.pages
       occurred_at_col: timestamp
       ids:
         - select: "anonymous_id"
@@ -29,7 +29,7 @@ inputs:
         - select: "anonymous_id"
           type: anonymous_id
           entity: user
-        - select: "email"
+        - select: "LOWER(email)"
           type: email
           entity: user
         - select: "shopify_customer_id"
