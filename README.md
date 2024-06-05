@@ -93,7 +93,7 @@
 </tbody>
 </table>
 
-## Var Groups
+## Entity Vars
 
 <table>
 <thead>
